@@ -11,11 +11,11 @@ nav { background:#1e1e1e; padding:10px; text-align:center; position:sticky; top:
 nav a { margin:0 15px; color:#e0e0e0; font-weight:600; text-decoration:none; }
 nav a:hover { color:#4f46e5; }
 section { max-width:900px; margin:100px auto 50px auto; padding:20px; }
-h2 { color:#4f46e5; margin-bottom:20px; }
-.card { background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.4); line-height:1.6; margin-bottom:20px; }
-button { padding:12px 25px; border:none; border-radius:8px; background:#22c55e; color:white; cursor:pointer; font-size:1rem; }
-button:hover { background:#16a34a; }
-a { text-decoration:none; }
+h2 { color:#4f46e5; margin-bottom:20px; display:inline-block; }
+.download-btn { float:right; padding:10px 20px; border:none; border-radius:8px; background:#22c55e; color:white; cursor:pointer; font-size:0.9rem; text-decoration:none; line-height:1.2; }
+.download-btn:hover { background:#16a34a; }
+.card { background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.4); line-height:1.6; margin-top:60px; }
+.clearfix::after { content:""; display:table; clear:both; }
 </style>
 </head>
 <body>
@@ -31,19 +31,16 @@ a { text-decoration:none; }
 </nav>
 
 <section id="about">
-<h2>About Me</h2>
+<div class="clearfix">
+  <h2>About Me</h2>
+  <a href="resume.pdf" download class="download-btn">Download Resume</a>
+</div>
+
 <div class="card">
 <p>Welcome! I’m Shreya, an aspiring business data analyst and AI enthusiast with a passion for turning raw data into meaningful insights. My journey began with exploring automation and low-code solutions, where I discovered how technology can streamline processes, uncover patterns, and solve real-world problems. Over time, I’ve built hands-on experience with tools like Microsoft Power Platform, coupled with a solid foundation in programming and data handling, which has allowed me to create practical, impactful solutions.</p>
 <p>I thrive at the intersection of curiosity, problem-solving, and technology. I enjoy exploring how data can tell stories, drive decisions, and create efficiencies in businesses. Whether it’s building automated workflows, analyzing complex datasets, or experimenting with AI-driven approaches, I approach every challenge with a mindset of learning and innovation.</p>
 <p>Beyond the technical side, I value clarity, collaboration, and creativity. I’m fascinated by how insights from data can influence strategy, improve experiences, and make organizations smarter. My goal is to grow as a professional who not only understands the numbers but can translate them into meaningful action, bridging the gap between technology, data, and business impact.</p>
 <p>As I continue my journey, I’m eager to contribute to projects that challenge me, sharpen my skills, and allow me to explore the evolving landscape of AI and analytics. I’m excited by opportunities where I can combine my curiosity, technical knowledge, and passion for problem-solving to create real value.</p>
-</div>
-
-<!-- Resume Download Button -->
-<div style="text-align:center; margin-top:20px;">
-  <a href="resume.pdf" download>
-    <button>Download Resume</button>
-  </a>
 </div>
 
 </section>
